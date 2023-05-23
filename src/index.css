@@ -1,0 +1,82 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	color: #fff;
+}
+
+body {
+	box-sizing: border-box;
+	padding: 3rem;
+	background-color: #e5e5e5;
+	line-height: 1.7;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.section-link:link,
+.section-link:visited {
+	text-decoration: none;
+	color: #ecd3f3;
+	transition: all 0.2s;
+}
+
+.section-link:hover {
+	transform: translateY(-0.3rem);
+	box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.section-link:active {
+	transform: translateY(-0.1rem);
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+ul,
+li {
+	text-decoration: none;
+	list-style: none;
+}
+
+.bridge-header {
+	height: 95vh;
+	background-image: linear-gradient(to right bottom, #2e092dab, #33225da5),
+		url(./assets/space.png);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	font-size: 2.2rem;
+	clip-path: polygon(50% 0, 50% 0, 100% 100%, 0 100%);
+	/* clip-path: polygon(50% 100%, 50% 100%, 100% 0, 0 0); */
+}
+
+.bride-header-text {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.section {
+	height: 95vh;
+	background-image: linear-gradient(to right bottom, #2e092dab, #33225da5),
+		url(./assets/space.png);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	/* clip-path: polygon(0 0, 0 0, 0 0, 0 100%); */
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+	font-size: 2.2rem;
+}
+
+.section-info {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
